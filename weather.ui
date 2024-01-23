@@ -70,6 +70,9 @@
       <pointsize>-1</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>SizeVerCursor</cursorShape>
+    </property>
     <property name="contextMenuPolicy">
      <enum>Qt::DefaultContextMenu</enum>
     </property>
@@ -96,7 +99,7 @@
      <string/>
     </property>
     <property name="text">
-     <string notr="true">Москва, Россия</string>
+     <string notr="true">Екатеринбург</string>
     </property>
     <property name="maxLength">
      <number>32767</number>
@@ -123,13 +126,19 @@
       <height>81</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="cursor">
-     <cursorShape>ArrowCursor</cursorShape>
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="mouseTracking">
      <bool>true</bool>

@@ -12,7 +12,7 @@ owm = OWM("15be1aebc67c9dbf5d58ab9302f4d8a0")
 owm_config = cfg.get_default_config()
 owm_config['language'] = 'ru'
 
-Form, Window = uic.loadUiType('gui/weather.ui')
+Form, Window = uic.loadUiType('weather.ui')
 app = QApplication([])
 window = Window()
 form = Form()
