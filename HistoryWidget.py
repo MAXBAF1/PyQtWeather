@@ -1,4 +1,5 @@
-from PySide2.QtGui import QIcon
+from PySide2.QtCore import Qt
+from PySide2.QtGui import QIcon, QCursor
 from PySide2.QtWidgets import *
 from PySide2.QtWidgets import QMessageBox
 
@@ -12,7 +13,7 @@ class HistoryWidget:
 		self.table = table
 		self.table.horizontalHeader().setStyleSheet(
 			"QHeaderView { color: white; }"
-			"QHeaderView::section { background-color: rgba(34, 124, 212, 255); }"
+			"QHeaderView::section { background-color: #262626; }"
 		)
 
 		self.database = Database()
@@ -27,9 +28,11 @@ class HistoryWidget:
 
 		for i, city in enumerate(cities):
 			btn = QPushButton()
-			btn.setFixedWidth(45)
+			btn.setFixedSize(40, 40)
 			btn.clicked.connect(self.delete)
 			btn.setIcon(QIcon('resources/delete.svg'))
+			btn.setCursor(QCursor.shape(QCursor()).PointingHandCursor)
+
 			self.table.setItem(i, 0, QTableWidgetItem(city[0]))
 			self.table.setCellWidget(i, 1, btn)
 

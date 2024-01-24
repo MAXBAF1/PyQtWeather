@@ -46,7 +46,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgba(24, 99, 157, 255)</string>
+   <string notr="true">background-color: #8bcdee;</string>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonFollowStyle</enum>
@@ -71,6 +71,12 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>-1</pointsize>
@@ -87,7 +93,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	border: none;
-	background: #d0f0e2;
+	background: #5bbeee;
+	color: white;
 	border-radius: 10px;
 	padding: 10px;
 	width: 90%;
@@ -97,7 +104,7 @@
 }
 
 .QLineEdit:hover {
-	opacity: 0.9;
+	background: #70c9f4;
 }
 </string>
     </property>
@@ -138,6 +145,18 @@
       <verstretch>0</verstretch>
      </sizepolicy>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>81</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>81</height>
+     </size>
+    </property>
     <property name="font">
      <font>
       <pointsize>-1</pointsize>
@@ -161,7 +180,7 @@
 	margin-right: auto;
 	margin-top: 10px;
 	border: none;
-	background: rgba(52, 113, 255, 255);
+	background: #5bbeee;
 	color: #fff;
 	border-radius: 10px;
 	padding: 20px;
@@ -171,12 +190,9 @@
 }
 
 QPushButton:hover {
-	color:#cbe7f5;
+	background: #70c9f4;
 }
-
-QPushButton:pressed {
-	background: rgba(34, 124, 212, 255);
-}</string>
+</string>
     </property>
     <property name="text">
      <string>🔍</string>
@@ -215,7 +231,7 @@ QPushButton:pressed {
      <string notr="true">QLabel {
 	margin-top: 50px;
 	color: #fff;
-	background: rgba(34, 124, 212, 255);
+	background: #5bbeee;
 	font-size: 20px;
 	padding: 5%;
 	border-radius: 10px;
@@ -241,10 +257,16 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>170</y>
+      <y>160</y>
       <width>621</width>
-      <height>231</height>
+      <height>241</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;</string>
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -257,15 +279,18 @@ QPushButton:pressed {
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>619</width>
-       <height>229</height>
+       <width>621</width>
+       <height>241</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 10px;</string>
      </property>
      <widget class="QTableWidget" name="tableWidget">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>10</y>
         <width>621</width>
         <height>231</height>
        </rect>
@@ -291,9 +316,9 @@ QPushButton:pressed {
          <colorrole role="Button">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -318,18 +343,18 @@ QPushButton:pressed {
          <colorrole role="Base">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="Window">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -347,9 +372,9 @@ QPushButton:pressed {
          <colorrole role="Button">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -374,18 +399,18 @@ QPushButton:pressed {
          <colorrole role="Base">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="Window">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -403,9 +428,9 @@ QPushButton:pressed {
          <colorrole role="Button">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -430,18 +455,18 @@ QPushButton:pressed {
          <colorrole role="Base">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="Window">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>34</red>
-            <green>124</green>
-            <blue>212</blue>
+            <red>91</red>
+            <green>190</green>
+            <blue>238</blue>
            </color>
           </brush>
          </colorrole>
@@ -457,13 +482,33 @@ QPushButton:pressed {
         <bold>false</bold>
        </font>
       </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgba(34, 124, 212, 255);
-font: 15px &quot;MS Shell Dlg 2&quot;;
-color: white;</string>
+       <string notr="true">
+QTableWidget {
+	background-color: #5bbeee;
+	font: 15px &quot;MS Shell Dlg 2&quot;;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+QTableWidgetItem {
+	align: center;
+}
+
+QPushButton:hover {
+	background: #70c9f4;
+	
+}
+</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -472,7 +517,7 @@ color: white;</string>
        <enum>QFrame::Sunken</enum>
       </property>
       <property name="lineWidth">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="horizontalScrollBarPolicy">
        <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -483,11 +528,17 @@ color: white;</string>
       <property name="editTriggers">
        <set>QAbstractItemView::SelectedClicked</set>
       </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
       <property name="dragDropOverwriteMode">
        <bool>false</bool>
       </property>
       <property name="selectionMode">
        <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideLeft</enum>
       </property>
       <property name="showGrid">
        <bool>false</bool>
@@ -507,11 +558,14 @@ color: white;</string>
       <property name="columnCount">
        <number>2</number>
       </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
       <attribute name="horizontalHeaderCascadingSectionResizes">
-       <bool>true</bool>
+       <bool>false</bool>
       </attribute>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>575</number>
+       <number>535</number>
       </attribute>
       <attribute name="horizontalHeaderMinimumSectionSize">
        <number>150</number>
@@ -558,7 +612,50 @@ color: white;</string>
        </property>
       </item>
      </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>История</string>
+      </property>
+     </widget>
     </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Узнай погоду</string>
+    </property>
    </widget>
   </widget>
  </widget>

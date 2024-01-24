@@ -29,11 +29,10 @@ class App(QWidget):
 	def item_click(self):
 		city = self.ui.tableWidget.currentItem().text()
 		self.ui.lineEdit.setText(city)
-		self.send_city(city)
+		self.send_city(city, False)
 
-	def send_city(self, city=False):
-		is_need_add = not city
-		city = self.ui.lineEdit.text() if not city else city
+	def send_city(self, city='', is_need_add=True):
+		city = self.ui.lineEdit.text() if city == '' else city
 
 		try:
 			weather = self.weather_api.get_weather(city)
