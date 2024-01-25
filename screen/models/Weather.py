@@ -1,5 +1,4 @@
 class Weather:
-
 	def __init__(self, weather, city):
 		super(Weather, self).__init__()
 		self.weather = weather

@@ -5,7 +5,7 @@ from pyowm.commons.exceptions import NotFoundError
 from screen.views import DeleteButton
 
 
-class Controller:
+class ViewModel:
 	def __init__(self, ui, weather_api, database):
 		self.ui = ui
 		self.weather_api = weather_api
@@ -14,7 +14,7 @@ class Controller:
 		self.table = self.ui.tableWidget
 
 	def item_click(self):
-		city = self.ui.tableWidget.currentItem().text()
+		city = self.table.currentItem().text()
 		self.ui.lineEdit.setText(city)
 		self.send_city(city, False)
 
@@ -46,7 +46,7 @@ class Controller:
 			self.table.setItem(i, 0, QTableWidgetItem(city[0]))
 			self.table.setCellWidget(i, 1, btn)
 
-	def add(self, city):
+	def _add(self, city):
 		self.database.add(city)
 		self.restore_history()
 
