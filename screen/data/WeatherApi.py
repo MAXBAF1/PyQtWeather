@@ -1,7 +1,7 @@
 from pyowm import OWM
 from pyowm.utils import config as cfg
 
-from models.Weather import Weather
+from screen.models.Weather import Weather
 
 
 class WeatherApi:

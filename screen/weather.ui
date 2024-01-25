@@ -526,7 +526,7 @@ QPushButton:hover {
        <bool>false</bool>
       </property>
       <property name="editTriggers">
-       <set>QAbstractItemView::SelectedClicked</set>
+       <set>QAbstractItemView::NoEditTriggers</set>
       </property>
       <property name="tabKeyNavigation">
        <bool>false</bool>
