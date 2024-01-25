@@ -46,7 +46,7 @@ class ViewModel:
 			self.table.setItem(i, 0, QTableWidgetItem(city[0]))
 			self.table.setCellWidget(i, 1, btn)
 
-	def _add(self, city):
+	def add(self, city):
 		self.database.add(city)
 		self.restore_history()
 
